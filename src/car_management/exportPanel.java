@@ -243,13 +243,13 @@ public class exportPanel extends javax.swing.JFrame {
 
             try {
                 exportWriter = new FileWriter("showRecords.txt", true);
-                exportWriter.write("export ");
-                exportWriter.write(nameInput.getText()+ " ");
-                exportWriter.write(brandInput.getText()+ " ");
-                exportWriter.write(modelInput.getText()+ " ");
-                exportWriter.write(colorInput.getText()+ " ");
-                exportWriter.write(countryInput.getText()+ " ");
-                exportWriter.write(engineInput.getText()+ " \n");
+                exportWriter.write("export,");
+                exportWriter.write(nameInput.getText()+ ",");
+                exportWriter.write(brandInput.getText()+ ",");
+                exportWriter.write(modelInput.getText()+ ",");
+                exportWriter.write(colorInput.getText()+ ",");
+                exportWriter.write(engineInput.getText()+ ",");
+                exportWriter.write(countryInput.getText()+ " \n");
                 exportWriter.close();
             } catch (IOException e) {
                 System.out.println("An error occurred.");

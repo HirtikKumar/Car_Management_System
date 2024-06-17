@@ -18,11 +18,11 @@ public class car extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         background = new javax.swing.JPanel();
-        Heading = new javax.swing.JLabel();
         importButton = new javax.swing.JButton();
         exportButton = new javax.swing.JButton();
         recordButton = new javax.swing.JButton();
         customButton = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -39,12 +39,7 @@ public class car extends javax.swing.JFrame {
 
         background.setBackground(new java.awt.Color(102, 0, 0));
 
-        Heading.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        Heading.setForeground(new java.awt.Color(255, 255, 255));
-        Heading.setText("WELCOME TO CAR MANAGEMENT SYSTEM");
-
-        importButton.setBackground(new java.awt.Color(255, 255, 255));
-        importButton.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        importButton.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         importButton.setForeground(new java.awt.Color(102, 0, 0));
         importButton.setText("Import A Car");
         importButton.addActionListener(new java.awt.event.ActionListener() {
@@ -53,8 +48,7 @@ public class car extends javax.swing.JFrame {
             }
         });
 
-        exportButton.setBackground(new java.awt.Color(255, 255, 255));
-        exportButton.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        exportButton.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         exportButton.setForeground(new java.awt.Color(102, 0, 0));
         exportButton.setText("Export A Car");
         exportButton.addActionListener(new java.awt.event.ActionListener() {
@@ -63,8 +57,7 @@ public class car extends javax.swing.JFrame {
             }
         });
 
-        recordButton.setBackground(new java.awt.Color(255, 255, 255));
-        recordButton.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        recordButton.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         recordButton.setForeground(new java.awt.Color(102, 0, 0));
         recordButton.setText("Show Record");
         recordButton.addActionListener(new java.awt.event.ActionListener() {
@@ -73,8 +66,7 @@ public class car extends javax.swing.JFrame {
             }
         });
 
-        customButton.setBackground(new java.awt.Color(255, 255, 255));
-        customButton.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        customButton.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         customButton.setForeground(new java.awt.Color(102, 0, 0));
         customButton.setText("Custom Charges");
         customButton.addActionListener(new java.awt.event.ActionListener() {
@@ -83,29 +75,26 @@ public class car extends javax.swing.JFrame {
             }
         });
 
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/car_management/CAR MANAGEMENT SYSTEM (1).png"))); // NOI18N
+
         javax.swing.GroupLayout backgroundLayout = new javax.swing.GroupLayout(background);
         background.setLayout(backgroundLayout);
         backgroundLayout.setHorizontalGroup(
             backgroundLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(backgroundLayout.createSequentialGroup()
-                .addContainerGap(172, Short.MAX_VALUE)
-                .addComponent(Heading)
-                .addGap(123, 123, 123))
-            .addGroup(backgroundLayout.createSequentialGroup()
-                .addGap(227, 227, 227)
-                .addGroup(backgroundLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(importButton, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(exportButton, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(recordButton, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(customButton, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, backgroundLayout.createSequentialGroup()
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 343, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(72, 72, 72)
+                .addGroup(backgroundLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(customButton, javax.swing.GroupLayout.DEFAULT_SIZE, 199, Short.MAX_VALUE)
+                    .addComponent(recordButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(exportButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(importButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(46, Short.MAX_VALUE))
         );
         backgroundLayout.setVerticalGroup(
             backgroundLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(backgroundLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(Heading)
-                .addGap(29, 29, 29)
+                .addGap(121, 121, 121)
                 .addComponent(importButton)
                 .addGap(18, 18, 18)
                 .addComponent(exportButton)
@@ -113,7 +102,8 @@ public class car extends javax.swing.JFrame {
                 .addComponent(recordButton)
                 .addGap(18, 18, 18)
                 .addComponent(customButton)
-                .addContainerGap(186, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -124,7 +114,9 @@ public class car extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(background, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(background, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         pack();
@@ -174,11 +166,11 @@ public class car extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel Heading;
     private javax.swing.JPanel background;
     private javax.swing.JButton customButton;
     private javax.swing.JButton exportButton;
     private javax.swing.JButton importButton;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JButton recordButton;
     // End of variables declaration//GEN-END:variables

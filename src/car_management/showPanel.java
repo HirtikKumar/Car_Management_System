@@ -124,7 +124,7 @@ private void loadRecords() {
             int srNo = 1;
             while (myReader.hasNextLine()) {
                 String line = myReader.nextLine();
-                String[] data = line.split("\\s+"); // Split the line into fields using space as delimiter
+                String[] data = line.split(","); // Split the line into fields using space as delimiter
                 model.addRow(new Object[]{srNo++, data[0], data[1], data[2], data[3], data[4], data[5], data[6]});
             }
             myReader.close();

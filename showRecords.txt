@@ -1,2 +1,2 @@
-import 1 2 3 4 6 5 
-export 0 9 8 7 5 6 
+import,civic ,honda,2024,black,1600 cc ,china 
+export,coure,honda,20002,red,660 cc,india 

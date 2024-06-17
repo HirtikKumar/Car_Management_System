@@ -76,7 +76,6 @@ public class importPanel extends javax.swing.JFrame {
         importHeading.setForeground(new java.awt.Color(255, 255, 255));
         importHeading.setText("IMPORT A CAR");
 
-        importButton.setBackground(new java.awt.Color(255, 255, 255));
         importButton.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         importButton.setForeground(new java.awt.Color(102, 0, 0));
         importButton.setText("Apply");
@@ -126,7 +125,6 @@ public class importPanel extends javax.swing.JFrame {
         message.setFont(new java.awt.Font("Segoe UI", 3, 14)); // NOI18N
         message.setForeground(new java.awt.Color(255, 255, 255));
 
-        back.setBackground(new java.awt.Color(255, 255, 255));
         back.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         back.setForeground(new java.awt.Color(102, 0, 0));
         back.setText("back");
@@ -256,13 +254,13 @@ public class importPanel extends javax.swing.JFrame {
 
             try {
                 importWriter = new FileWriter("showRecords.txt", true);
-                importWriter.write("import ");
-                importWriter.write(nameInput.getText() + " ");
-                importWriter.write(brandInput.getText()+ " ");
-                importWriter.write(modelInput.getText()+ " ");
-                importWriter.write(colorInput.getText()+ " ");
-                importWriter.write(countryInput.getText()+ " ");
-                importWriter.write(engineInput.getText()+ " \n");
+                importWriter.write("import,");
+                importWriter.write(nameInput.getText() + ",");
+                importWriter.write(brandInput.getText()+ ",");
+                importWriter.write(modelInput.getText()+ ",");
+                importWriter.write(colorInput.getText()+ ",");
+                importWriter.write(engineInput.getText()+ ",");
+                importWriter.write(countryInput.getText()+ " \n");
                 importWriter.close();
             } catch (IOException e) {
                 System.out.println("An error occurred.");
